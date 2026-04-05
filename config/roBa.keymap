@@ -117,6 +117,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        scroll: scroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SCROLL";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        };
     };
 
     keymap {
@@ -129,6 +136,8 @@
 &mt LEFT_SHIFT Z  &kp X      &kp C     &kp V      &kp B      &kp SINGLE_QUOTE              &kp SEMICOLON     &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp LGUI          &kp LCTRL  &kp LALT  &kp SPACE  &kp SPACE  &kp SPACE                     &kp BSPC          &lt 0 ENTER                             &kp ESC
             >;
+
+            sensor-bindings = <&scroll>;
         };
 
         MacNumArrow {
