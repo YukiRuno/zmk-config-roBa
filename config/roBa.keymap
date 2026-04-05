@@ -144,6 +144,7 @@
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
     };
@@ -180,6 +181,8 @@
 &mt LEFT_SHIFT Z  &kp X             &kp C     &kp V      &kp B      &kp SINGLE_QUOTE              &kp SEMICOLON     &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &kp LCTRL         &kp LEFT_COMMAND  &kp LALT  &kp SPACE  &kp SPACE  &kp SPACE                     &kp BSPC          &lt 0 ENTER                             &kp ESC
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         WinNumArrow {
@@ -189,13 +192,15 @@
 &kp KP_MULTIPLY  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_PLUS   &kp LS(MINUS)         &kp END   &kp LC(E)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F12
 &kp DELETE       &kp N0        &kp DOT       &kp LCTRL     &kp LGUI      &kp BSPC              &trans    &trans                                                      &kp Q
             >;
+
+            sensor-bindings = <&inc_dec_kp LG(KP_PLUS) LG(KP_MINUS)>;
         };
 
         Sym {
             bindings = <
 &kp LS(NUMBER_1)  &kp AT_SIGN  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                      &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp EQUAL
 &kp RBKT          &kp BSLH     &kp LS(RBKT)      &kp LS(BSLH)      &kp LS(INT3)      &trans        &kp LS(LG(NUMBER_5))  &kp PLUS          &trans            &trans            &trans            &trans
-&trans            &trans       &trans            &trans            &kp LS(INT1)      &kp INT3      &kp LA(LS(INT3))      &kp LEFT_BRACE    &trans            &trans            &trans            &trans
+&trans            &trans       &trans            &trans            &kp LS(INT1)      &kp INT3      &kp LA(INT3)          &kp LEFT_BRACE    &trans            &trans            &trans            &trans
 &trans            &trans       &trans            &trans            &trans            &trans        &trans                &trans                                                                  &trans
             >;
         };
