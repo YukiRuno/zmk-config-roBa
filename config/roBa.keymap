@@ -10,6 +10,7 @@
 
 &trackball {
     // automouse-layer = <4>;
+
     scroll-layers = <4>;
 
     // arrows {
@@ -132,6 +133,8 @@
             label = "SCROLL2";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
+
+            tap-ms = <1>;
         };
     };
 
@@ -143,7 +146,7 @@
 &kp Q             &kp W      &kp E     &kp R   &kp T                                                        &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S      &kp D     &kp F   &kp G        &kp LS(LC(LG(NUMBER_4)))      &kp LEFT_BRACKET  &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT Z  &kp X      &kp C     &kp V   &kp B        &kp SINGLE_QUOTE              &kp SEMICOLON     &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LGUI          &kp LCTRL  &kp LALT  &trans  &lt 4 SPACE  &lt 6 LA(LC(SPACE))           &kp BSPC          &lt 0 ENTER                             &kp ESC
+&kp LGUI          &kp LCTRL  &kp LALT  &trans  &lt 4 SPACE  &lt 6 LA(LC(SPACE))           &kp BSPC          &lt 1 ENTER                             &kp ESC
             >;
 
             sensor-bindings = <&scroll>;
@@ -156,6 +159,8 @@
 &kp KP_MULTIPLY  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_PLUS   &kp LS(MINUS)         &kp END   &kp LC(E)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F12
 &kp DELETE       &kp N0        &kp DOT       &kp LCTRL     &kp LGUI      &kp BSPC              &trans    &trans                                                      &kp Q
             >;
+
+            sensor-bindings = <&scroll2 SCRL_UP SCRL_DOWN>;
         };
 
         WinBase {
