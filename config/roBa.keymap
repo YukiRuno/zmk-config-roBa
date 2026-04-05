@@ -123,6 +123,8 @@
             label = "SCROLL";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
+            tap-ms = <1>;
         };
 
         scroll2: scroll2 {
@@ -144,7 +146,7 @@
 &kp LGUI          &kp LCTRL  &kp LALT  &trans  &lt 4 SPACE  &lt 6 LA(LC(SPACE))           &kp BSPC          &lt 0 ENTER                             &kp ESC
             >;
 
-            sensor-bindings = <&scroll2 SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&scroll>;
         };
 
         MacNumArrow {
