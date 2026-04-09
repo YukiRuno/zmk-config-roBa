@@ -76,6 +76,11 @@
             bindings = <&mkp MB5>;
             key-positions = <7 8>;
         };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <8 9>;
+        };
     };
 
     macros {
@@ -198,10 +203,10 @@
 
         Sym {
             bindings = <
-&kp LS(NUMBER_1)  &kp AT_SIGN  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                      &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp EQUAL
-&kp RBKT          &kp BSLH     &kp LS(RBKT)      &kp LS(BSLH)      &kp LS(INT3)      &trans        &kp LS(LG(NUMBER_5))  &kp PLUS          &trans            &trans            &trans            &trans
-&trans            &trans       &trans            &trans            &kp LS(INT1)      &kp INT3      &kp LA(INT3)          &kp LEFT_BRACE    &trans            &trans            &trans            &trans
-&trans            &trans       &trans            &trans            &trans            &trans        &trans                &trans                                                                  &trans
+&kp LS(NUMBER_1)       &kp AT_SIGN   &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                    &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp PLUS
+&kp RBKT               &kp BSLH      &kp EQUAL         &kp LS(INT3)      &kp INT3          &trans      &kp LS(LG(NUMBER_5))  &kp LS(INT1)      &kp LEFT_BRACKET  &trans            &trans            &kp LEFT_BRACE
+&kp LS(RIGHT_BRACKET)  &kp LS(BSLH)  &trans            &kp LS(INT1)      &trans            &trans      &trans                &kp LA(INT3)      &kp SINGLE_QUOTE  &trans            &trans            &kp SEMICOLON
+&trans                 &trans        &trans            &trans            &trans            &trans      &trans                &trans                                                                  &trans
             >;
         };
 
