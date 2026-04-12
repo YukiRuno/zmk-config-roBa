@@ -181,10 +181,10 @@
 
         WinBase {
             bindings = <
-&kp Q             &kp W             &kp E     &kp R      &kp T                                                      &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S             &kp D     &kp F      &kp G      &kp LS(LC(LG(NUMBER_4)))      &kp LEFT_BRACKET  &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X             &kp C     &kp V      &kp B      &kp SINGLE_QUOTE              &kp SEMICOLON     &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_COMMAND  &kp LALT  &kp SPACE  &kp SPACE  &kp SPACE                     &kp BSPC          &lt 0 ENTER                             &kp ESC
+&kp Q             &kp W             &kp E     &kp R      &kp T                                                        &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S             &kp D     &kp F      &kp G        &kp LS(LC(LG(NUMBER_4)))      &kp LEFT_BRACKET  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X             &kp C     &kp V      &kp B        &kp SINGLE_QUOTE              &kp SEMICOLON     &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_COMMAND  &kp LALT  &kp SPACE  &lt 4 SPACE  &lt 6 GRAVE                   &kp BSPC          &lt 3 ENTER                             &kp ESC
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -193,12 +193,12 @@
         WinNumArrow {
             bindings = <
 &kp TAB          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(TAB)                                   &trans     &mkp MB4        &mkp MB3        &mkp MB5         &kp F10
-&kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS  &kp LG(NUMBER_0)      &kp HOME  &kp LC(A)  &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp F11
+&kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS  &kp LC(NUMBER_0)      &kp HOME  &kp LC(A)  &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp F11
 &kp KP_MULTIPLY  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_PLUS   &kp LS(MINUS)         &kp END   &kp LC(E)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F12
-&kp DELETE       &kp N0        &kp DOT       &kp LCTRL     &kp LGUI      &kp BSPC              &trans    &trans                                                      &kp Q
+&kp DELETE       &kp N0        &kp DOT       &kp LCTRL     &kp LGUI      &kp BSPC              &trans    &trans                                                      &kp LG(L)
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(KP_PLUS) LG(KP_MINUS)>;
+            sensor-bindings = <&inc_dec_kp LC(KP_PLUS) LC(KP_MINUS)>;
         };
 
         Sym {
