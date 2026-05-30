@@ -195,7 +195,7 @@
 &kp TAB          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(TAB)                                   &trans     &mkp MB4        &mkp MB3        &mkp MB5         &kp F10
 &kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_MINUS  &kp LC(NUMBER_0)      &kp HOME  &kp LC(A)  &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp F11
 &kp KP_MULTIPLY  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_PLUS   &kp LS(MINUS)         &kp END   &kp LC(E)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F12
-&kp DELETE       &kp N0        &kp DOT       &kp LCTRL     &kp LGUI      &kp BSPC              &trans    &trans                                                      &kp LG(L)
+&kp DELETE       &kp N0        &kp DOT       &kp LEFT_WIN  &kp LEFT_ALT  &kp BSPC              &trans    &trans                                                      &kp LG(L)
             >;
 
             sensor-bindings = <&inc_dec_kp LC(KP_PLUS) LC(KP_MINUS)>;
